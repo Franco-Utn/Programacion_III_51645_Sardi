@@ -1,0 +1,132 @@
+<!-- 1) Creacion dee estrutura básica html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO -->
+    <title>Tp1 Programacion</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Css/style.css">
+
+
+</head>
+<body>
+
+ <!-- Sección del Encabezado -->
+ <header>
+    <h1 style="font-size: 25px;">Encabezado Principal del Documento</h1>
+</header>
+
+<!-- 2 y 3) Encabezados y Estilos desde html y Div -->
+<div id="encabezados">
+    <h2 style="text-decoration: underline;">Sección de Encabezados y Estilos</h2>
+    <article>
+        <h3 style="color: red;">Encabezado 1</h3>
+        <h4 style="color: blue;">Encabezado 2</h4>
+        <h5>Encabezado 3</h5>
+        <h6>Encabezado 4</h6>
+    </article>
+</div>
+
+<!-- 4- Etiquta <a>,<ul> y <ol>  -->
+    <section id="listas-enlaces">
+        <h2 style="text-decoration: underline;">Sección de Enlaces y Listas</h2>
+        <article>
+            <!-- Enlaces -->
+            <a href="https://www.w3schools.com/html/">Enlace externo</a>
+            <br>
+            <br>
+            <a href="#encabezados">Enlace interno a encabezados</a>
+            <br>
+            <br>
+            <a href="#multimedia">Enlace interno a multimedia</a>
+            
+            <!-- Lista Ordenada -->
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+
+            <!-- Lista Desordenada -->
+            <ul>
+                <li>Elemento uno</li>
+                <li>Elemento dos</li>
+                <li>Elemento tres</li>
+            </ul>
+        </article>
+    </section>
+    <section id="multimedia">
+        <h2 style="text-decoration: underline;">Sección de Multimedia</h2>
+        <article>
+            <img src="/Assets/imagenHtml.png" alt="Imagen de Logo HTML5">
+            <iframe controls width="400" height="350" src="https://www.youtube.com/embed/DkAZW2-3qVI" title="*GOL DE MESSI A BAYER EN HD CON RELATO ÉPICO*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/751642/simple/large/" width="920" height="245"></iframe>        </article>
+    </section>
+    <!-- 6- Tablas  -->
+        <section id="table">
+            <h2 style="text-decoration: underline;">Sección de Tablas</h2>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>28</td>
+                            <td>Madrid</td>
+                        </tr>
+                        <tr>
+                            <td>Ana García</td>
+                            <td>34</td>
+                            <td>Barcelona</td>
+                        </tr>
+                        <!-- Puedes añadir más filas aquí -->
+                    </tbody>
+                </table>        
+            </article>
+        </section>
+        <!-- 7- Formularios  -->
+        <section id="miFormulario">
+            <h2 style="text-decoration: underline;">Sección de Tablas</h2>
+            <article>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+            
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 Tp1 Programacion. Franco Sardi Bottino.</p>
+</footer>
+
+<script>
+    // Obtener el formulario
+    var formulario = document.getElementById('miFormulario');
+
+    // Añadir un listener al evento de envío del formulario
+    formulario.addEventListener('submit', function(event) {
+        // Prevenir el comportamiento por defecto del formulario (enviar datos)
+        event.preventDefault();
+        // Mostrar un mensaje en la consola
+        console.log('El formulario ha sido enviado (pero no se enviará realmente).');
+    });
+    
+</script>
+</body>
+</html>

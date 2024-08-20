@@ -1,0 +1,123 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del Encabezado Principal */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos para las Secciónes */
+#encabezados , #listas-enlaces, #multimedia , #table, #miFormulario{
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Estilos específicos para los encabezados */
+
+#encabezados h5 {
+    font-size: 2em;
+}
+
+#encabezados h6 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* Estilos específicos para los enlaces */
+#listas-enlaces a{
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+#listas-enlaces a:hover{
+    font-size: 1.2em;
+    
+}
+/* Estilos específicos para las imagenes */
+#multimedia article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#multimedia iframe{
+    margin: 30px;
+}
+
+/* Estilo Tablas */
+#table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#table th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#table th {
+    background-color: #f2f2f2;
+}
+#table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#miFormulario form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom:100px;
+
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+#miFormulario input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#miFormulario textarea {
+    resize: vertical;
+    height: 150px;
+}
+#miFormulario button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+#miFormulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
